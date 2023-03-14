@@ -1,0 +1,75 @@
+class Class1: 
+    def hello(self): 
+        print("In Class1")  
+        
+class Class2(Class1): 
+    def hi(self): 
+        print("In Class2") 
+
+class Class3(Class1): 
+    def bye(self): 
+        print("In Class3")   
+         
+class Class4(Class2, Class3): 
+    def wish(self): 
+        print("In Class4")   
+
+obj = Class4() 
+obj.hi() 
+In Class2
+obj.bye()
+In Class3
+class Class1: 
+    def met(self): 
+        print("In Class1")  
+        
+class Class2(Class1): 
+    def met(self): 
+        print("In Class2") 
+
+class Class3(Class1): 
+    def met(self): 
+        print("In Class3")   
+         
+class Class4(Class2, Class3): 
+    def met(self): 
+        print("In Class4")   
+
+obj = Class4() 
+obj.met() 
+In Class4
+class Class1: 
+    def met(self): 
+        print("In Class1")  
+        
+class Class2(Class1): 
+    def met(self): 
+        print("In Class2") 
+
+class Class3(Class1): 
+    def met(self): 
+        print("In Class3")   
+         
+class Class4(Class2, Class3):
+    pass
+
+obj = Class4() 
+obj.met() 
+class Website:
+    def first(self):
+        print ('google.com')
+        
+class Second(Website):
+    def sec(self):
+        print ('stackoverflow.com')
+        
+class Third(Second):
+    def final(self):
+        print ('youtube.com')
+a=Third()
+a.first()
+google.com
+a.sec()
+stackoverflow.com
+a.final()
+youtube.com
